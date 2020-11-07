@@ -1,0 +1,5 @@
+FROM postgres:13.0
+
+# Execute init scripts
+## These only have to be copied into /docker-entrypoint-initdb.d/
+COPY init_json_sql.sql /docker-entrypoint-initdb.d/

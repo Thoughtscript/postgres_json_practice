@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  db:
+    build:
+      context: ./dbcontext
+      dockerfile: dockerfile
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_PASSWORD="${POSTGRES_PASSWORD}"
+    volumes:
+      - db-data:/var/lib/postgresql/data:delegated
+
+volumes:
+  db-data:
