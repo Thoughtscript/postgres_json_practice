@@ -6,7 +6,7 @@ docker login -u <username> -p <"password">
 # Start and connect to the docker CONTAINER
 ## Run the CONTAINER and execute the init scripts
 ### POSTGRES_PASSWORD is used to connect from a third-party app
-### -d ill be used below via -U
+### -d will be used below via -U
 docker run -e POSTGRES_PASSWORD=<testpw> -d <postgres>
 
 # Get the CONTAINER ID <aa9f01c38d04>

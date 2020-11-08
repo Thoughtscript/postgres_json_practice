@@ -12,7 +12,7 @@ docker build .
 # Start and connect to the docker CONTAINER
 ## Run the CONTAINER and execute the init scripts
 ### POSTGRES_PASSWORD is used to connect from a third-party app
-### -d ill be used below via -U
+### -d will be used below via -U
 ### Note that the -p flag must be supplied to expose and map the internal port
 docker run -e POSTGRES_PASSWORD=<testpw> -p 5432:5432 -d <aa9f01c38d04>
 
